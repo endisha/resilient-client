@@ -1,0 +1,36 @@
+{
+    "name": "endisha/resilient-client",
+    "description": "Resilient Client is a PHP package designed to implement a circuit breaker pattern to enhance stability and prevent cascading failure requests",
+    "keywords": ["resilient", "client","circuit", "breaker", "design", "pattern", "php", "package"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Endisha",
+            "email": "mohamed.endisha@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ResilientClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "ResilientClientTests\\": "tests/" 
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.3",
+        "phpunit/php-code-coverage": "^10.1"
+    },
+    "scripts": {
+        "test": "@php ./vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable"
+}
