@@ -3,8 +3,6 @@
 namespace ResilientClient\CircuitBreaker\Middleware;
 
 use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\Exception\ClientException;
-
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use ResilientClient\CircuitBreaker\CircuitBreaker;
